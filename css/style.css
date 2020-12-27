@@ -1,0 +1,200 @@
+/* Базовые стили. START ------------------ */
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+
+body {
+	margin     : 0;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 500;
+	font-size  : 18px;
+}
+
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+ul {
+	margin : 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
+
+.container {
+	max-width: 1200px;
+	margin   : 0 auto;
+	padding  : 0 15px;
+}
+
+.visually-hidden {
+	position: absolute;
+	clip    : rect(0 0 0 0);
+	width   : 1px;
+	height  : 1px;
+	margin  : -1px;
+}
+
+/* Базовые стили. END ------------------ */
+
+a {
+	color          : #151C22;
+	text-decoration: none;
+}
+
+/* Ссылка в виде кнопки */
+.btn {
+	display        : flex;
+	justify-content: center;
+	align-items    : center;
+
+	width  : 200px;
+	height : 64px;
+	padding: 0 24px;
+
+	background-color: #151C22;
+
+	font-size  : 16px;
+	font-weight: 700;
+	color      : white;
+}
+
+/* Шапка ------------------ */
+.main-header {
+	height: 67px;
+}
+
+.main-nav {
+	display        : flex;
+	justify-content: space-between;
+	align-items    : center;
+}
+
+.site-navigation {
+	display  : flex;
+	flex-wrap: wrap;
+
+}
+
+.site-navigation__list:not(:last-child) {
+	margin-right: 35px;
+}
+
+.site-navigation__link {
+	font-size: 16px;
+	color    : #151C22;
+}
+
+.logo {
+	position: relative;
+	left    : -30px;
+
+	font-size  : 24px;
+	font-weight: 700;
+
+	/* transform: translateX(-50%); */
+}
+
+.user-navigation {
+	font-size: 0;
+}
+
+.user-navigation__search::before {
+	display: inline-block;
+	content: '';
+
+	width : 20px;
+	height: 20px;
+
+	background: url("../img/search.svg");
+}
+
+.user-navigation__cart::before {
+	display: inline-block;
+	content: '';
+
+	width      : 22px;
+	height     : 20px;
+	margin-left: 35px;
+
+	background: url("../img/cart.svg");
+}
+
+.container2 {
+	padding-left : calc(50% - 600px);
+	padding-right: calc(50% - 600px);
+}
+
+/* Промо блок ------------------ */
+.promo {
+	/* height        : 617px; */
+	padding-top   : 50px;
+	padding-bottom: 50px;
+
+	background-color: #F1F2F4;
+}
+
+.promo__wrapper {
+	display        : flex;
+	justify-content: center;
+}
+
+.promo__col-1 {
+	position: relative;
+	display : flex;
+	width   : 50%;
+}
+
+.promo__col-1-wrapper {
+	margin-top  : 142px;
+	margin-right: 100px;
+	margin-left : auto;
+}
+
+.promo__slogan {
+
+	margin-bottom: 20px;
+
+	font-weight: 400;
+	color      : #727A82;
+}
+
+.promo__brand {
+	margin-bottom: 50px;
+}
+
+.promo__btn {
+	width: 219px;
+}
+
+.promo__arrow {
+	position: absolute;
+	bottom  : 0;
+	left    : 0;
+
+	font-size: 0;
+}
+
+.promo__arrow::before {
+	display: block;
+
+	width  : 12px;
+	height : 29px;
+	content: '';
+
+	background-image: url("../img/arrow.svg");
+}
+
+.promo__col-2 {
+	width: 50%;
+}
