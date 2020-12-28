@@ -10,29 +10,30 @@
 	<link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="doc">
+	<header class="main-header">
+		<div class="container">
+			<nav class="main-nav">
+				<ul class="site-navigation">
+					<li class="site-navigation__list"><a class="site-navigation__link" href="#">Woman</a></li>
+					<li class="site-navigation__list"><a class="site-navigation__link" href="#">Man</a></li>
+					<li class="site-navigation__list"><a class="site-navigation__link" href="#">New</a></li>
+				</ul>
 
-	<header class="main-header container">
-		<nav class="main-nav">
-			<ul class="site-navigation">
-				<li class="site-navigation__list"><a class="site-navigation__link" href="#">Woman</a></li>
-				<li class="site-navigation__list"><a class="site-navigation__link" href="#">Man</a></li>
-				<li class="site-navigation__list"><a class="site-navigation__link" href="#">New</a></li>
-			</ul>
+				<a class="logo">Nîmes</a>
 
-			<a class="logo">Nîmes</a>
-
-			<div class="user-navigation">
-				<a class="user-navigation__search" href="#">Searh</a>
-				<a class="user-navigation__cart" href="#">Cart</a>
-			</div>
-		</nav>
+				<div class="user-navigation">
+					<a class="user-navigation__search" href="#">Searh</a>
+					<a class="user-navigation__cart" href="#">Cart</a>
+				</div>
+			</nav>
+		</div>
 	</header>
 
 	<main>
 		<h1 class="visually-hidden">Online shop Nîmes</h1>
 
-		<section class="promo">
+		<section class="doc__promo promo">
 			<div class="promo__wrapper container">
 				<div class="promo__col-1">
 					<div class="promo__col-1-wrapper">
@@ -49,88 +50,102 @@
 			</div>
 		</section>
 
-		<section class="bestsellers">
-			<h2>Bestsellers</h2>
-			<a href="#">View all</a>
-			<ul>
-				<li>
-					<a href="#">
-						<img src="img/63-1.jpg" width="270" height="349" alt="Jacket">
-						<p>Jacket</p>
-						<p>$120</p>
-					</a>
-				</li>
+		<section class="doc__bestsellers bestsellers">
+			<div class="container">
+				<div class="bestsellers__wrapper">
+					<h2 class="bestsellers__title">Bestsellers</h2>
+					<a class="link__view-all" href="#">View all</a>
+				</div>
+				<ul class="bestsellers__list">
+					<li class="bestsellers__item">
+						<a href="#">
+							<img class="bestsellers__img" src="img/63-1.jpg" width="270" height="349" alt="Jacket">
+							<p class="bestsellers__text">Jacket</p>
+							<p class="bestsellers__price">$120</p>
+						</a>
+					</li>
 
-				<li>
-					<a href="#">
-						<img src="img/64-1.jpg" width="270" height="349" alt="Overalls">
-						<p>Overalls</p>
-						<p>$140</p>
-					</a>
-				</li>
+					<li class="bestsellers__item">
+						<a href="#">
+							<img class="bestsellers__img" src="img/64-1.jpg" width="270" height="349" alt="Overalls">
+							<p class="bestsellers__text">Overalls</p>
+							<p class="bestsellers__price">$140</p>
+						</a>
+					</li>
 
-				<li>
-					<a href="#">
-						<img src="img/62-1.jpg" width="270" height="349" alt="Jacket">
-						<p>Jacket</p>
-						<p>$90</p>
-					</a>
-				</li>
+					<li class="bestsellers__item">
+						<a href="#">
+							<img class="bestsellers__img" src="img/62-1.jpg" width="270" height="349" alt="Jacket">
+							<p class="bestsellers__text">Jacket</p>
+							<p class="bestsellers__price">$90</p>
+						</a>
+					</li>
 
-				<li>
-					<a href="#">
-						<img src="img/65-1.jpg" width="270" height="349" alt="Overalls">
-						<p>Overalls</p>
-						<p>$160</p>
-					</a>
-				</li>
-			</ul>
+					<li class="bestsellers__item">
+						<a href="#">
+							<img class="bestsellers__img" src="img/65-1.jpg" width="270" height="349" alt="Overalls">
+							<p class="bestsellers__text">Overalls</p>
+							<p class="bestsellers__price">$160</p>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</section>
 
-		<section class="news">
-			<h2>News</h2>
-			<a href="#">View all</a>
-			<article>
-				<img src="img/67-1.jpg" width="700" height="370" alt="G- Star Updates Its Sustainable Collection">
-				<h3>G- Star Updates Its Sustainable Collection</h3>
-				<time datetime="2020-02-12">Feb 12, 2020</time>
-				<p>G-Star Raw is pushing the sustainability movement forward with a collection of stretch denim items for spring 2020 which is particularly designed for reuse...</p>
-				<a href="#">Read more ...</a>
-			</article>
+		<section class="doc__news news">
+			<div class="container">
+				<div class="news__wrapper">
+					<h2 class="news__title">News</h2>
+					<a class="link__view-all" href="#">View all</a>
+				</div>
+				<article class="news__article">
+					<img src="img/67-1.jpg" width="700" height="370" alt="G- Star Updates Its Sustainable Collection">
+					<div class="news__inner">
+						<h3 class="news__title">G- Star Updates Its Sustainable Collection</h3>
+						<time class="news__date" datetime="2020-02-12">Feb 12, 2020</time>
+						<p class="news__text">G-Star Raw is pushing the sustainability movement forward with a collection of stretch denim items for spring 2020 which is particularly designed for reuse...</p>
+						<a class="btn" href="#">Read more ...</a>
+					</div>
+				</article>
+			</div>
 		</section>
 
-		<section class="category">
-			<h2>Shop by category</h2>
-			<a href="#">View all</a>
-			<ul>
-				<li>
-					<a href="#">
-						<img src="img/5-1.jpg" width="270" height="349" alt="Jeans">
-						<p>Jacket</p>
-					</a>
-				</li>
+		<section class="doc__category category">
+			<div class="container">
+				<div class="category__wrapper">
+					<h2 class="category__title">Shop by category</h2>
+					<a class="link__view-all" href="#">View all</a>
+				</div>
+				<ul class="category__list">
+					<li class="category__item">
+						<a href="#">
+							<img class="category__img" src="img/5-1.jpg" width="270" height="349" alt="Jeans">
+							<p class="category__text">Jacket</p>
+						</a>
+					</li>
 
-				<li>
-					<a href="#">
-						<img src="img/52-1.jpg" width="270" height="349" alt="Shirts">
-						<p>Overalls</p>
-					</a>
-				</li>
+					<li class="category__item">
+						<a href="#">
+							<img class="category__img" src="img/52-1.jpg" width="270" height="349" alt="Shirts">
+							<p class="category__text">Overalls</p>
+						</a>
+					</li>
 
-				<li>
-					<a href="#">
-						<img src="img/53-1.jpg" width="270" height="349" alt="Jackets">
-						<p>Jacket</p>
-					</a>
-				</li>
+					<li class="category__item">
+						<a href="#">
+							<img class="category__img" src="img/53-1.jpg" width="270" height="349" alt="Jackets">
+							<p class="category__text">Jacket</p>
+						</a>
+					</li>
 
-				<li>
-					<a href="#">
-						<img src="img/54-1.jpg" width="270" height="349" alt="Overalls">
-						<p>Overalls</p>
-					</a>
-				</li>
-			</ul>
+					<li class="category__item">
+						<a href="#">
+							<img class="category__img" src="img/54-1.jpg" width="270" height="349" alt="Overalls">
+							<p class="category__text">Overalls</p>
+						</a>
+					</li>
+				</ul>
+			</div>
 		</section>
 	</main>
 

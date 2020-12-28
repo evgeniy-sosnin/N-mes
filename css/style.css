@@ -1,34 +1,8 @@
-/* Базовые стили. START ------------------ */
+/* Базовые стили ----------------------- */
 *,
 *:before,
 *:after {
 	box-sizing: border-box;
-}
-
-body {
-	margin     : 0;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 500;
-	font-size  : 18px;
-}
-
-input,
-button,
-textarea {
-	font-family: inherit;
-}
-
-button {
-	cursor: pointer;
-}
-
-ul {
-	margin : 0;
-	padding: 0;
-}
-
-li {
-	list-style: none;
 }
 
 .container {
@@ -45,14 +19,51 @@ li {
 	margin  : -1px;
 }
 
-/* Базовые стили. END ------------------ */
+body {
+	margin     : 0;
+	font-family: 'Work Sans', sans-serif;
+	font-weight: 500;
+	font-size  : 18px;
+	line-height: 21px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+ul {
+	margin : 0;
+	padding: 0;
+}
+
+li {
+	list-style: none;
+}
 
 a {
 	color          : #151C22;
 	text-decoration: none;
 }
 
-/* Ссылка в виде кнопки */
+input,
+button,
+textarea {
+	font-family: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
 .btn {
 	display        : flex;
 	justify-content: center;
@@ -69,7 +80,30 @@ a {
 	color      : white;
 }
 
-/* Шапка ------------------ */
+.link__view-all {
+	margin-right : -2px;
+	padding      : 0 5px 1px 5px;
+	border-bottom: 2px solid #151C22;
+}
+
+/* Отступы между блоками --------------- */
+.doc__promo {
+	margin-bottom: 130px;
+}
+
+.doc__bestsellers {
+	margin-bottom: 108px;
+}
+
+.doc__news {
+	margin-bottom: 109px;
+}
+
+.doc__category {
+	margin-bottom: 130px;
+}
+
+/* Шапка ------------------------------- */
 .main-header {
 	height: 67px;
 }
@@ -101,8 +135,6 @@ a {
 
 	font-size  : 24px;
 	font-weight: 700;
-
-	/* transform: translateX(-50%); */
 }
 
 .user-navigation {
@@ -130,14 +162,8 @@ a {
 	background: url("../img/cart.svg");
 }
 
-.container2 {
-	padding-left : calc(50% - 600px);
-	padding-right: calc(50% - 600px);
-}
-
-/* Промо блок ------------------ */
+/* Промо блок -------------------------- */
 .promo {
-	/* height        : 617px; */
 	padding-top   : 50px;
 	padding-bottom: 50px;
 
@@ -145,14 +171,13 @@ a {
 }
 
 .promo__wrapper {
-	display        : flex;
-	justify-content: center;
+	display: flex;
 }
 
 .promo__col-1 {
 	position: relative;
 	display : flex;
-	width   : 50%;
+	width   : 52%;
 }
 
 .promo__col-1-wrapper {
@@ -196,5 +221,156 @@ a {
 }
 
 .promo__col-2 {
-	width: 50%;
+	position: relative;
+
+	width        : 545px;
+	padding-right: 15px;
 }
+
+.promo__col-2::before {
+	position: absolute;
+	left    : -50px;
+	top     : -50px;
+
+	width  : 232px;
+	height : 176px;
+	content: '';
+
+	background-image: url('../img/diagonal-top.png');
+
+	z-index: 1;
+}
+
+.promo__col-2::after {
+	position: absolute;
+	left    : 248px;
+	bottom  : -50px;
+
+	width  : 232px;
+	height : 176px;
+	content: '';
+
+	background-image: url('../img/diagonal-bottom.png');
+
+	z-index: 1;
+}
+
+.promo__img {
+	position: relative;
+	display : block;
+
+	z-index: 2;
+}
+
+/* Bestsellers ------------------------- */
+.bestsellers__wrapper {
+	display        : flex;
+	justify-content: space-between;
+	align-items    : baseline;
+}
+
+.bestsellers__title {
+	margin-bottom: 70px;
+}
+
+.bestsellers__list {
+	display  : flex;
+	flex-wrap: wrap;
+
+	margin-right: -30px;
+}
+
+.bestsellers__item {
+	margin-right: 30px;
+}
+
+.bestsellers__img {
+	display: block;
+}
+
+.bestsellers__text {
+	margin-top   : 25px;
+	margin-bottom: 15px;
+}
+
+.bestsellers__price {
+	font-weight: 700;
+}
+
+/* News -------------------------------- */
+.news__wrapper {
+	display        : flex;
+	justify-content: space-between;
+	align-items    : baseline;
+}
+
+.news__title {
+	margin-bottom: 70px;
+}
+
+.news__article {
+	display: flex;
+}
+
+.news__inner {
+	width  : 400px;
+	height : 397px;
+	margin : 31px 70px 34px 0;
+	padding: 52px 43px 28px 43px;
+
+	background-color: #F1F2F4;
+}
+
+.news__title {
+	margin-bottom: 27px;
+
+	font-size  : 24px;
+	line-height: 28px;
+}
+
+.news__date {
+	font-weight: 400;
+}
+
+.news__text {
+	margin-top   : 13px;
+	margin-bottom: 24px;
+
+	font-size  : 18px;
+	font-weight: 400;
+
+	color: #727A82;
+}
+
+/* Shop by category -------------------- */
+.category__wrapper {
+	display        : flex;
+	justify-content: space-between;
+	align-items    : baseline;
+}
+
+.category__title {
+	margin-bottom: 70px;
+}
+
+.category__list {
+	display  : flex;
+	flex-wrap: wrap;
+
+	margin-right: -30px;
+}
+
+.category__item {
+	margin-right: 30px;
+}
+
+.category__img {
+	display: block;
+}
+
+.category__text {
+	margin-top   : 25px;
+	margin-bottom: 15px;
+}
+
+/* Футер ------------------------------- */
