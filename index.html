@@ -15,12 +15,18 @@
 		<div class="container">
 			<nav class="main-nav">
 				<ul class="site-navigation">
-					<li class="site-navigation__list"><a class="site-navigation__link" href="#">Woman</a></li>
-					<li class="site-navigation__list"><a class="site-navigation__link" href="#">Man</a></li>
-					<li class="site-navigation__list"><a class="site-navigation__link" href="#">New</a></li>
+					<li class="site-navigation__item">
+						<a class="site-navigation__link" href="#">Woman</a>
+					</li>
+					<li class="site-navigation__item">
+						<a class="site-navigation__link" href="#">Man</a>
+					</li>
+					<li class="site-navigation__item">
+						<a class="site-navigation__link" href="#">New</a>
+					</li>
 				</ul>
 
-				<a class="logo">Nîmes</a>
+				<a class="main-header__logo logo">Nîmes</a>
 
 				<div class="user-navigation">
 					<a class="user-navigation__search" href="#">Searh</a>
@@ -54,7 +60,7 @@
 			<div class="container">
 				<div class="bestsellers__wrapper">
 					<h2 class="bestsellers__title">Bestsellers</h2>
-					<a class="link__view-all" href="#">View all</a>
+					<a class="view-all-link" href="#">View all</a>
 				</div>
 				<ul class="bestsellers__list">
 					<li class="bestsellers__item">
@@ -96,15 +102,17 @@
 			<div class="container">
 				<div class="news__wrapper">
 					<h2 class="news__title">News</h2>
-					<a class="link__view-all" href="#">View all</a>
+					<a class="view-all-link" href="#">View all</a>
 				</div>
 				<article class="news__article">
-					<img src="img/67-1.jpg" width="700" height="370" alt="G- Star Updates Its Sustainable Collection">
-					<div class="news__inner">
-						<h3 class="news__title">G- Star Updates Its Sustainable Collection</h3>
-						<time class="news__date" datetime="2020-02-12">Feb 12, 2020</time>
-						<p class="news__text">G-Star Raw is pushing the sustainability movement forward with a collection of stretch denim items for spring 2020 which is particularly designed for reuse...</p>
-						<a class="btn" href="#">Read more ...</a>
+					<img class="news__img" src="img/67-1.jpg" width="700" height="370" alt="G- Star Updates Its Sustainable Collection">
+					<div class="news__article-wrapper">
+						<div class="news__article-inner">
+							<h3 class="news__title">G- Star Updates Its Sustainable Collection</h3>
+							<time class="news__date" datetime="2020-02-12">Feb 12, 2020</time>
+							<p class="news__text">G-Star Raw is pushing the sustainability movement forward with a collection of stretch denim items for spring 2020 which is particularly designed for reuse...</p>
+							<a class="btn" href="#">Read more ...</a>
+						</div>
 					</div>
 				</article>
 			</div>
@@ -114,7 +122,7 @@
 			<div class="container">
 				<div class="category__wrapper">
 					<h2 class="category__title">Shop by category</h2>
-					<a class="link__view-all" href="#">View all</a>
+					<a class="view-all-link" href="#">View all</a>
 				</div>
 				<ul class="category__list">
 					<li class="category__item">
@@ -150,20 +158,20 @@
 	</main>
 
 	<footer class="main-footer">
-		<a class="logo">Nîmes</a>
-		<ul>
-			<li><a href="#">Shop</a></li>
-			<li><a href="#">Delivery</a></li>
-			<li><a href="#">Service</a></li>
-			<li><a href="#">Sitemap</a></li>
-			<li><a href="#">Contacts</a></li>
+		<a href="#" class="logo">Nîmes</a>
+		<ul class="main-footer__nav">
+			<li class="main-footer__nav-item"><a href="#">Shop</a></li>
+			<li class="main-footer__nav-item"><a href="#">Delivery</a></li>
+			<li class="main-footer__nav-item"><a href="#">Service</a></li>
+			<li class="main-footer__nav-item"><a href="#">Sitemap</a></li>
+			<li class="main-footer__nav-item"><a href="#">Contacts</a></li>
 		</ul>
 
 		<ul class="social">
-			<li class="social__item"><a href="#">Facebook</a></li>
-			<li class="social__item"><a href="#">Instagram</a></li>
-			<li class="social__item"><a href="#">Pinterest</a></li>
-			<li class="social__item"><a href="#">Twitter</a></li>
+			<li class="social__item social__item--facebook"><a href="#">Facebook</a></li>
+			<li class="social__item social__item--instagram"><a href="#">Instagram</a></li>
+			<li class="social__item social__item--pinterest"><a href="#">Pinterest</a></li>
+			<li class="social__item social__item--twitter"><a href="#">Twitter</a></li>
 		</ul>
 	</footer>
 </body>
